@@ -30,7 +30,7 @@ function Navbar() {
             <ul className='flex gap-10'>
                 {
                     navData.map((items, i) => (
-                        <li key={i} className='lg:text-xl text-lg hidden lg:flex'><NavLink to={items.navitem} className='text-gray-400'>{items.navitem}</NavLink></li>
+                        <li key={i} className='lg:text-xl text-lg hidden lg:flex'><NavLink to={items.link} className='text-gray-400'>{items.navitem}</NavLink></li>
                     ))
                 }
             </ul>

@@ -14,7 +14,7 @@ function MobileMenu({ toggleMenu }) {
         {
           navData.map((items, i) => (
             <li key={i} className='block text-lg'>
-              <NavLink to={items.navitem} className='text-gray-400'>
+              <NavLink to={items.link} className='text-gray-400'>
                 {items.navitem}
               </NavLink>
             </li>

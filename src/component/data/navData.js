@@ -1,31 +1,26 @@
- export  const navData = [
-         {
-            navitem: "Dashboard",
-            link:"#"
-        },
-
-        {
-            navitem: "Incidents",
-            link:"#"
-        },
-
-        {
-            navitem: "Locations",
-            link:"#"
-        },
-
-        {
-            navitem: "Activities",
-            link:"#"
-        },
-
-        {
-            navitem: "Documents",
-            link:"#"
-        },
-
-        {
-            navitem: "Cypher AI",
-            link:"#"
-        },
-    ]
+export  const navData = [
+  {
+    navitem: "Dashboard",
+    link:"/"
+  },
+  {
+    navitem: "Incidents",
+    link:"/incidents"
+  },
+  {
+    navitem: "Locations",
+    link:"/locations"
+  },
+  {
+    navitem: "Activities",
+    link:"/activities"
+  },
+  {
+    navitem: "Documents",
+    link:"/documents"
+  },
+  {
+    navitem: "Cypher AI",
+    link:"/cypher-ai"
+  },
+]
