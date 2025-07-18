@@ -60,8 +60,6 @@ function Navbar() {
           </div>
           {ismenu && <MobileMenu  toggleMenu={toggleMenu}/>}
     </nav>
-
-    <DashBord/>
        </section>
     </>
   )

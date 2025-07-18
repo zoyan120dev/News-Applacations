@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NewsData } from './data/NewsData'
+import DashBord from './DashBord';
 
 function News() {
 
@@ -11,6 +12,7 @@ function News() {
    <>
    
     {/*  */}
+    <DashBord/>
    <section className='relative mt-14 '>
      <div className='max-w-[1300px] mx-auto '>
           {/* Grids sections */}
