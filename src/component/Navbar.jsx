@@ -14,7 +14,7 @@ function Navbar() {
         const bodyClass = document.body.classList;
         ismenu ? bodyClass.add("no-Scroll") : bodyClass.remove("no-Scroll");
         return () => bodyClass.remove("no-Scroll")
-    }, [setmenu])
+    }, [ismenu])
 
   return (
     <>

@@ -32,9 +32,44 @@ function News() {
           </div>
     </div>
 
-    <div className='absolute md:right-[50px]  right-[250px] lg:bottom-[80px]  bottom-[-90px] cursor-pointer md:mt-0 ' onClick={handleToggleChat}>
+    <div className='absolute md:right-[50px]  right-[250px] lg:bottom-[80px]  bottom-[-90px] cursor-pointer md:mt-0 p-5' onClick={handleToggleChat}>
              <img src="/cimg.png" alt="functtion"/>
           </div>
+
+          {showChat && (
+            <div className='absolute md:right-[50px]  right-[100px] lg:bottom-[200px] bg-white bottom-[90px] cursor-pointer md:mt-0 p-5 shadow-lg rounded-xl z-50'>
+                <div className='bg-[#f97316] text-white font-bold rounded-t-xl py-5 px-5 text-[30px] '>
+                    Chat with Cypher
+                </div>
+                <div className='p-3 relative'>
+                   <div className='max-w-[301px] max-h-[370px] relative'>
+                       <p className='bg-slate-700 p-4 rounded-xl absolute top-0 right-0 text-white'>Lorem ipsum dolor sit.</p>
+                       <p className='bg-gray-100 shadow-md p-4 rounded-xl absolute top-[80px] left-0 text-black'>Lorem ipsum dolor sit.</p>
+                        <p className='bg-slate-700 p-4 rounded-xl absolute top-40 right-0 text-white'>Lorem ipsum dolor sit.</p>
+
+                         <p className='bg-gray-100 shadow-md p-4 rounded-xl absolute  left-0 top-56 text-black'>Lorem ipsum dolor sit.</p>
+                   </div>
+                </div>
+
+                <div className='mt-[280px]'>
+                  <input type="text" placeholder='Enter your question...' className='w-full border p-2'/>
+                  <div className='flex justify-between mt-3 items-center'>
+                    <div className='flex gap-2 '>
+                     <div>
+                       <img src="/Frame (6).png" alt="" />
+                     </div>
+                     <div >
+                       <img src="/Frame (9).png" alt="" />
+                     </div>
+                      <div>
+                       <img src="/Frame (7).png" alt="" />
+                     </div>
+                    </div>
+                    <button className='btn bg-[#F26922] px-4 py-1 rounded-xl text-white'>Send</button>
+                  </div>
+                </div>
+            </div>
+          )}
    </section>
    </>
   )
