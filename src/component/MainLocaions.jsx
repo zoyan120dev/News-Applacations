@@ -1,5 +1,6 @@
 import React from 'react'
 import DashBord6 from './DashBord6'
+import { GridsData } from './data/GridData'
 
 function MainLocaions() {
   return (
@@ -44,8 +45,19 @@ function MainLocaions() {
                     </div>
                     {/* grid Card */}
 
-                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
-
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3 border-b border-gray-600 '>
+                       {
+                        GridsData.map((items, i) => (
+                            <div key={i} >
+                               <div className='mt-3'>
+                                <img src={items.img} alt="Loding"/>
+                               </div>
+                               <h1 className='font-bold text-lg'>{items.title}</h1>
+                               <p className='text-base text-gray-400'>{items.disciptions}</p>
+                               <span className='font-bold text-lg'>{items.price}</span>
+                            </div>
+                        ))
+                       }
                     </div>
                 </div>
 
