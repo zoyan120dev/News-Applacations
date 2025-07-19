@@ -24,6 +24,8 @@ function App() {
           <Route path='/lastsection' element={<LastSections/>}/>
           <Route path='/locations' element={<MainLocaions/>}/>
           <Route path='/activities' element={<ErrorPage/>}/>
+          <Route path='/documents' element={<ErrorPage/>}/>
+          <Route path='/cypher-ai' element={<ErrorPage/>}/>
        </Routes>
     
     </BrowserRouter>
