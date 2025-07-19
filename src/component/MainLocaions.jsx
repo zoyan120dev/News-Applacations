@@ -7,9 +7,9 @@ function MainLocaions() {
     <DashBord6/>
    <section className='max-w-[1300px] mx-auto mt-9'>
       {/* main sections div */}
-      <div>
+      <div className='flex justify-between gap-5'>
         {/* left section */}
-           <div>
+           <div className='max-w-[680px]'>
 
               <div className='flex items-center gap-2'>
                 <div className='bg-[#F4F4F5] p-3 rounded-full '>
@@ -35,9 +35,27 @@ function MainLocaions() {
                     <h1 className='text-base md:text-2xl font-bold'>Description</h1>
                      <p className='text-base md:text-lg text-gray-500 leading-tight'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit general sac mascho werho</p>
                 </div>
+                {/* Grid card (1) */}
+
+                <div className='mt-3'>
+                    <div className='flex justify-between'>
+                        <span className='font-bold text-lg'>Locations</span>
+                        <span className='text-gray-400 text-base'>See all</span>
+                    </div>
+                    {/* grid Card */}
+
+                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'>
+
+                    </div>
+                </div>
 
            </div>
         {/* Right section */}
+        <div>
+            <p>Incident Map</p>
+            <img src="/map(2).png" alt="" />
+            <p>Start 19.1232, -118.233     End 19.3245, -119.2323</p>
+        </div>
       </div>
    </section>
    </>
