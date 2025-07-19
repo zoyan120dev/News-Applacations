@@ -9,6 +9,7 @@ import Selection from './component/Selection'
 import Node from './component/Node'
 import LastSections from './component/Location'
 import MainLocaions from './component/MainLocaions'
+import ErrorPage from './component/ErrorPage'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/node' element={<Node/>}/>
           <Route path='/lastsection' element={<LastSections/>}/>
           <Route path='/locations' element={<MainLocaions/>}/>
+          <Route path='/activities' element={<ErrorPage/>}/>
        </Routes>
     
     </BrowserRouter>
