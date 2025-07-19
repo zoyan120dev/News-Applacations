@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './component/Navbar'
 import News from './component/News'
 import Incidents from './component/Incidents'
+import Selection from './component/Selection'
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
        <Routes>
          <Route path='/' element={<News/>}/>
          <Route path='/incidents' element={<Incidents/>}/>
-          <Route path='started' element={<Started/>}/>
+          <Route path='/started' element={<Started/>}/>
+          <Route path='/select' element={<Selection/>}/>
        </Routes>
     
     </BrowserRouter>

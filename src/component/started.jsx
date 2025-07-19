@@ -1,9 +1,13 @@
 import React from 'react'
 import { GetData } from './data/GetData'
-import { useLocation, Navigate, replace } from 'react-router-dom';
+import { useLocation, Navigate, replace, useNavigate } from 'react-router-dom';
 import Incidents from './Incidents';
 function Started() {
-    const locations = useLocation();
+   let useNaviget = useNavigate();
+
+   const Navagationuse = () =>{
+     useNaviget("/select")
+   }
     
   return (
      <>
@@ -33,7 +37,7 @@ function Started() {
            }
         </div>
              
-             <button className='bg-[#F26922] px-10 py-4 rounded-xl text-white font-bold'>Get started</button>
+             <button className='bg-[#F26922] px-10 py-4 rounded-xl text-white font-bold' onClick={Navagationuse}>Get started</button>
         </div>
       </section>
      </>

@@ -11,7 +11,7 @@ function DashBord2() {
     <section className='bg-[#E4E4E780] p-5'>
       <div className='max-w-[1300px] mx-auto pt-0 pl-5 '>
         <span className='text-gray-400 text-sm'>Home - Incidents</span>
-        <div className='flex md:justify-between justify-center flex-col md:flex-row'>
+        <div className='flex md:justify-between justify-center flex-col lg:flex-row'>
             <h1 className='text-[35px] font-bold text-center'>Incidents</h1>
 
             <div className='flex gap-5 items-center flex-col sm:flex-row'>
