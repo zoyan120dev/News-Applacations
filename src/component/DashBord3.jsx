@@ -32,7 +32,7 @@ const Next = () => {
         </div>
         <div className='flex gap-4 flex-col lg:flex-row'>
             <button className='bg-[#FAFAFA] lg:px-10 xl:py-3 px-5 py-2 shadow-lg rounded-xl transition-all hover:bg-[#D4D4D8] ' onClick={Back}>Back</button>
-            <button className='bg-[#F26922] lg:px-10 xl:py-3 px-5 py-2 shadow-lg  rounded-xl transition-all hover:bg-orange-500' onClick={Next }>Next step</button>
+            <button className='bg-[#F26922] lg:px-10 xl:py-3  text-white px-5 py-2 shadow-lg  rounded-xl transition-all hover:bg-orange-500' onClick={Next }>Next step</button>
         </div>
 
        </div>
