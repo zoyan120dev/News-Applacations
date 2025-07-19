@@ -13,6 +13,9 @@ function DashBord5() {
          navigate("/")
        )
   return (
+
+
+    
    <>
    
     <section className='bg-[#E4E4E780] p-5'>
@@ -39,6 +42,7 @@ function DashBord5() {
        </div>
     </section>
    </>
+
   )
 }
 
