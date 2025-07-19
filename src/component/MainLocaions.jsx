@@ -1,16 +1,17 @@
 import React from 'react'
 import DashBord6 from './DashBord6'
 import { GridsData } from './data/GridData'
+import Defult from './Defult'
 
 function MainLocaions() {
   return (
    <>
     <DashBord6/>
-   <section className='max-w-[1300px] mx-auto mt-9'>
+   <section className='max-w-[1300px] mx-auto mt-9 pb-[100px]'>
       {/* main sections div */}
-      <div className='flex justify-between gap-5'>
+      <div className='flex justify-between gap-5 flex-col m-3 md:flex-row'>
         {/* left section */}
-           <div className='max-w-[680px]'>
+           <div className='md:max-w-[680px] justify-center max-w-[500px] mx-auto sm:ml-24  md:ml-0'>
 
               <div className='flex items-center gap-2'>
                 <div className='bg-[#F4F4F5] p-3 rounded-full '>
@@ -45,7 +46,7 @@ function MainLocaions() {
                     </div>
                     {/* grid Card */}
 
-                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3 border-b border-gray-600 '>
+                    <div className='grid grid-cols-2  lg:grid-cols-3 gap-x-2 gap-y-3 border-b border-gray-600 justify-center mx-auto'>
                        {
                         GridsData.map((items, i) => (
                             <div key={i} >
@@ -60,13 +61,16 @@ function MainLocaions() {
                        }
                     </div>
                 </div>
-
+               
+               {/*  Defult Grid*/}
+               <Defult/>
+               <Defult/>
            </div>
         {/* Right section */}
         <div>
-            <p>Incident Map</p>
-            <img src="/map(2).png" alt="" />
-            <p>Start 19.1232, -118.233     End 19.3245, -119.2323</p>
+            <p className='text-gray-400 text-base'>Incident Map</p>
+            <img src="/map(2).png" alt="" className='w-full h-auto'/>
+            <p className='text-gray-400 text-base'>Start 19.1232, -118.233     End 19.3245, -119.2323</p>
         </div>
       </div>
    </section>
