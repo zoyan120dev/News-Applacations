@@ -8,6 +8,7 @@ import Incidents from './component/Incidents'
 import Selection from './component/Selection'
 import Node from './component/Node'
 import LastSections from './component/Location'
+import MainLocaions from './component/MainLocaions'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/select' element={<Selection/>}/>
           <Route path='/node' element={<Node/>}/>
           <Route path='/lastsection' element={<LastSections/>}/>
+          <Route path='/locations' element={<MainLocaions/>}/>
        </Routes>
     
     </BrowserRouter>
